@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: chat-service
+    env: node
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.16.0
